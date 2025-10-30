@@ -1,0 +1,181 @@
+/* ================================
+ESTILOS GENERALES
+================================ */
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-color: #ac9a85;
+}
+
+/* ================================
+     ENCABEZADO PRINCIPAL
+  ================================ */
+
+header {
+  color: #fa9200;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-content {
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+/* ================================
+       LOGO
+    ================================ */
+
+.logo {
+  width: 10%; /* Ajusta el tamaño según sea necesario */
+  margin: 0 10px;
+  
+}
+
+nav {
+  
+  padding: 20px 0;
+
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  font-size: 1em;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* CARRUSEL EN MODIFICACION */
+.carrusel-container {
+  /* Define la altura máxima del carrusel */
+  max-width: 70%;
+  overflow-x: hidden;
+  height: 400px; /* Ajusta la altura a tu necesidad */
+
+  /* Propiedades clave de desplazamiento */
+  overflow-x: scroll; /* Permite el desplazamiento horizontal */
+  scroll-snap-type: x mandatory; /* Fuerza el anclaje a los slides */
+  scroll-behavior: smooth; /* Desplazamiento suave */
+
+  /* Estilos visuales opcionales */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 2. Pista/Carril que contiene todos los items */
+.carrusel-pista {
+  display: flex; /* Coloca los items uno al lado del otro */
+  height: 100%;
+}
+
+/* 3. Cada item individual (el slide) */
+.carrusel-item {
+  /* Asegura que cada slide ocupe exactamente el 100% del ancho del contenedor */
+  flex: 0 0 100%;
+  width: 100%;
+
+  /* Propiedad clave para el anclaje del desplazamiento */
+  scroll-snap-align: center; /* Centra el anclaje del slide */
+
+  /* Centrado de contenido interno y estilos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+}
+/*CARRUSEL EN MODIFICACION*/
+
+/*estilo slider*/
+.slider-frame {
+  width: 1200px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 100%;
+  animation: slide 15s infinite ease-in-out;
+}
+.slider-frame img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: 0%;
+  }
+  30% {
+    margin-left: -100%;
+  }
+  65% {
+    margin-left: -100%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  95% {
+    margin-left: -200%;
+  }
+}
+.centered {
+  width: auto;
+  height: auto;
+}
+
+.section p {
+  font-size: 2em;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.card {
+  height: 400px;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.4);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1em;
+  width: 80%; /* Ajusta el ancho según sea necesario */
+}
+
+.card p {
+  font-size: 1em;
+
+  color: #ffffff;
+}
+
+.card img {
+  height: 50%;
+  width: auto;
+
+  border-radius: 5px;
+}
